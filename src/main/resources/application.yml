@@ -1,0 +1,21 @@
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+            client-id: 553152204332-7pj1541j1mvqakc06jlshfllef820p5p.apps.googleusercontent.com
+            client-secret: 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
+
+          auth0:
+            client-id: flPBekPXFNyqISGhi3LDbyp7TOabElvk
+            client-secret: ZMid3sAwbeMMhWXYhz9xzIcMZJbsJ1SXJ_4mWKPwZpXkbecerPBnXEuvRbiSoKou
+            scope:
+              - openid
+              - profile
+              - email
+        provider:
+          auth0:
+                # trailing slash is important!
+              issuer-uri: https://dev-pqylv2yt.us.auth0.com/
+
